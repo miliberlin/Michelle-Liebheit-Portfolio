@@ -126,36 +126,6 @@ section:first-of-type {
     }
 }
 
-#skillset {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 20px 50px;
-    width: 85vw;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#skill-list {
-    list-style: none;
-    width: 100%;
-}
-
-#skill-list ul {
-    padding: 10px;
-}
-
-#skill-list li:nth-child(2) {
-    padding-left: 10%;
-}
-
-#skill-list li:nth-child(3) {
-    padding-left: 20%;
-}
-
-#skill-list li:nth-child(4) {
-    padding-left: 30%;
-}
-
 #about {
     width: 85vw;
 }
@@ -198,4 +168,34 @@ section:first-of-type {
         width: 100%;
         order: 1;
     }
+}
+
+#skillset {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 50px;
+    width: 85vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#skill-list {
+    list-style: none;
+    width: 100%;
+}
+
+#skill-list ul {
+    padding: 10px;
+}
+
+#skill-list li:nth-child(2) {
+    padding-left: 10%;
+}
+
+#skill-list li:nth-child(3) {
+    padding-left: 20%;
+}
+
+#skill-list li:nth-child(4) {
+    padding-left: 30%;
 }
