@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jomolhari|Lato:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,900|Lato:300i,400,400i,700&display=swap');
 
 * {
     padding: 0;
@@ -20,7 +20,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Jomolhari', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 h1  {
@@ -59,7 +60,7 @@ a:active {
 }
 
 nav {
-    background: rgba(124, 169, 130, 1);
+    background: #FDFFFC;
     padding: 5px 20px;
 }
 
@@ -70,7 +71,7 @@ nav {
 .menu a, .menu a:link {
     text-decoration: none;
     outline: none;
-    color: #FDFFFC;
+    color: #000;
 }
 
 .menu a:hover {
@@ -91,6 +92,11 @@ nav {
     font-size: 16px;
     padding: 15px 5px;
     white-space: nowrap;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 .logo a,
@@ -164,41 +170,57 @@ nav {
     border-top: 0;
 }
 
-/* viewport highlight */
-
-section.middle-viewport {
-    background-color: rgba(49, 54, 56, 0.1);;
-}
-
 /* Hero */
 
 #hero {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(245, 246, 252, 0.52)), url("../img/dummy.jpg");
+    background-image: 
+    linear-gradient(to bottom, rgba(253, 255, 252, 0.52), rgba(253, 255, 252, 0.52)),
+    url("../img/hero.png");
     width: 100vw;
     height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-flow: column nowrap;
     padding: 20px;
     justify-content: center;
     align-items: center;
+    /* position: relative;
+    top: -100px;
+    z-index: -1; */
 }
 
 .headline {
     width: 50%;
+    max-width: 500px;
+    border: 10px solid #000;;
+    color: #000;
+    padding: 50px 50px;
     text-align: center;
+    line-height: 1.5;
 }
 
-@media (max-width: 600px) {
+.headline h1 {
+    font-weight: 900;
+    padding: 10px;
+}
+
+.headline p {
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+@media (max-width: 750px) {
     .headline {
-        width: 100%;
+        width: 80%;
+        max-width: 600px;
         padding: 30px;
     }
 }
 
-/* content */
+/* content general stylings */
 
 .outer-wrapper {
     display: flex;
@@ -217,15 +239,26 @@ section {
 }
 
 section:first-of-type {
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+/* viewport highlight */
+
+section.middle-viewport {
+    background-color: rgba(49, 54, 56, 0.1);
+}
+
+/* content styling */
 
 #about {
     width: 85vw;
+    height: auto;
+    max-height: 600px;
 }
 
 .about-flex-container {
     width: 100%;
+    max-height: 400px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -369,7 +402,7 @@ section:first-of-type {
     margin: 7px 10px;
     cursor: pointer;
     display: inline-block;
-    background-color: transparent;
+    background-color: #FDFFFC;
     border: 2px solid rgba(124, 169, 130, 1);
     border-radius: 3px;
     transition: all 0.3s;
