@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    color: #000;
     box-sizing: border-box;
 }
 
@@ -17,6 +16,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #FDFFFC;
+    color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,26 +47,26 @@ a {
 }
 
 a:link {
-    color: ;
-    color: rgba(39, 60, 44, 1);
+    color: rgba(124, 169, 130, 1);
 }
 
 a:visited {
-    color: ;
+    color: rgba(228, 179, 99, 1);
 }
 
 a:focus {
-    background: ;
+    background: rgba(244, 68, 46, 1);
 }
 
 a:hover {
-  background: ;
-  border-bottom: 1px solid;
+    background: ;
+    border-bottom: 1px solid;
+    color: rgba(244, 68, 46, 1);
 }
 
 a:active {
     background: ;
-    color: ;
+    color: rgba(244, 68, 46, 1);
 }
 
 nav ul {
@@ -219,7 +219,7 @@ section:first-of-type {
     margin: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .project-flex-container {
         flex-flow: column nowrap;
         align-items: center;
@@ -237,5 +237,51 @@ section:first-of-type {
     object-fit: cover;
     border: 1px solid transparent;
     border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
+.btn {
+    color: #000 !important;
+    width: 40%;
+    max-width: 300px;
+    padding: 10px 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 7px 10px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid rgba(124, 169, 130, 1);
+    border-radius: 3px;
+    transition: all 0.3s;
+    text-decoration: none;
+    outline: none;
+}
+
+@media (max-width: 1150px) {
+    .btn { 
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 7px auto;
+    }
+}
+
+.btn:hover {
+    color: #FDFFFC;
+    background-color: rgba(124, 169, 130, 1);
+    border: 2px solid rgba(124, 169, 130, 1);
+    border-radius: 3px;
+    transform: scale(0.9);
+}
+
+.btn:active {
+    color: #FDFFFC;
+    background-color: rgba(244, 68, 46, 1);
+    border: 2px solid rgba(244, 68, 46, 1);
+    border-radius: 3px;
+    transform: scale(0.9);
+}
