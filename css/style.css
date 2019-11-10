@@ -181,11 +181,11 @@ section:first-of-type {
 
 .about-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .about-flex-container {
         flex-flow: column nowrap;
     }
