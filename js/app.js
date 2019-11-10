@@ -1,4 +1,8 @@
-$(function() {
+// toggle nav bar https://codepen.io/tutsplus/pen/ZdRdZM
+// sticky navigation https://codepen.io/_codemics/pen/PwEbYJ
+
+$(document).ready(function() {
+    // nav bar
     $(".toggle").on("click", function() {
         if ($(".item").hasClass("active")) {
             $(".item").removeClass("active");
@@ -8,9 +12,7 @@ $(function() {
             $(this).find("a").html("<i class='fas fa-times'></i>");
         }
     });
-});
 
-$(document).ready(function() {
     // grab the initial top offset of the navigation 
        var stickyNavTop = $('#nav').offset().top;
        
