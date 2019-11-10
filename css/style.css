@@ -157,19 +157,26 @@ section:first-of-type {
 }
 
 #about {
-    display: flex;
     width: 85vw;
+}
+
+.about-flex-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: space-between;
 }
 
 .about-text {
     width: 50%;
-    padding: 20px 20px 0px 50px;
+    padding: 20px 20px 20px 50px;
+    order: 1;
 }
 
 .about-img {
     width: 50%;
+    order: 2;
 }
 
 .about-img img {
@@ -179,11 +186,16 @@ section:first-of-type {
 }
 
 @media (max-width: 600px) {
+    .about-flex-container {
+        flex-flow: column nowrap;
+    }
     .about-text {
         width: 100%;
+        order: 2;
     }
 
     .about-img {
         width: 100%;
+        order: 1;
     }
 }
