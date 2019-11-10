@@ -41,8 +41,8 @@ p {
 }
 
 a {
-    outline: none;
-    text-decoration: none;
+    outline: none !important;
+    text-decoration: none !important;
     padding: 2px 1px 0;
 }
 
@@ -55,17 +55,17 @@ a:visited {
 }
 
 a:focus {
-    background: rgba(244, 68, 46, 1);
-}
-
-a:hover {
-    background: ;
-    border-bottom: 1px solid;
     color: rgba(244, 68, 46, 1);
 }
 
+a:hover {
+    border-bottom: 1px solid;
+    color: rgba(244, 68, 46, 1);
+    outline: none !important;
+    text-decoration: none !important;
+}
+
 a:active {
-    background: ;
     color: rgba(244, 68, 46, 1);
 }
 
@@ -144,6 +144,19 @@ section:first-of-type {
     order: 1;
 }
 
+.social-icons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.fab {
+    font-size: 2.5em;
+    color: rgba(124, 169, 130, 1);
+    padding: 10px;
+}
+
 .about-img {
     width: 50%;
     order: 2;
@@ -219,6 +232,14 @@ section:first-of-type {
     margin: 20px;
 }
 
+.project-title {
+    margin-top: 10px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
 @media (max-width: 750px) {
     .project-flex-container {
         flex-flow: column nowrap;
@@ -240,16 +261,18 @@ section:first-of-type {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
 }
 
-.btn {
-    color: #000 !important;
+.btn, .btn:visited {
     width: 40%;
     max-width: 300px;
     padding: 10px 10px;
+    color: #000;
     font-size: 0.8em;
     letter-spacing: 0.1em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration: none;
+    outline: none;
     margin: 7px 10px;
     cursor: pointer;
     display: inline-block;
@@ -257,8 +280,7 @@ section:first-of-type {
     border: 2px solid rgba(124, 169, 130, 1);
     border-radius: 3px;
     transition: all 0.3s;
-    text-decoration: none;
-    outline: none;
+
 }
 
 @media (max-width: 1150px) {
@@ -270,7 +292,7 @@ section:first-of-type {
     }
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     color: #FDFFFC;
     background-color: rgba(124, 169, 130, 1);
     border: 2px solid rgba(124, 169, 130, 1);
