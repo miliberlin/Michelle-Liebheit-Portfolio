@@ -164,6 +164,14 @@ nav {
     border-top: 0;
 }
 
+/* viewport highlight */
+
+section.middle-viewport {
+    background-color: rgba(49, 54, 56, 0.1);;
+}
+
+/* content */
+
 .outer-wrapper {
     display: flex;
     flex-flow: column nowrap;

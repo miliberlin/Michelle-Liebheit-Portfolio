@@ -34,6 +34,29 @@ $(document).ready(function() {
     $(window).scroll(function() {
         stickyNav();
     });
+
+    // hightlight section in viewport
+    var timeout;
+    $(window).on("load scroll resize", function() {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+      timeout = setTimeout(function() {
+        var $window = $(window),
+          hitbox_top = $window.scrollTop() + $window.height() * .3,
+          hitbox_bottom = $window.scrollTop() + $window.height() * .6;
+        $("section").each(function() {
+          var $element = $(this),
+            element_top = $element.offset().top,
+            element_bottom = $element.offset().top + $element.height();
+          $element.toggleClass("middle-viewport", hitbox_top < element_bottom && hitbox_bottom > element_top);
+        });
+      }, 20);
+    });
+
+
+    // smooth scroll
+
 });
 
 
