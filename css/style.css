@@ -80,12 +80,14 @@ a:visited {
 }
 
 a:hover {
-    color: rgba(244, 68, 46, 1);
+    color: rgba(228, 179, 99, 1);
 }
 
 a:active {
     color: rgba(244, 68, 46, 1);
 }
+
+/* Navigation */
 
 nav {
     background: #FDFFFC;
@@ -95,26 +97,6 @@ nav {
 .menu {
     list-style: none;
 }
-
-.menu a, .menu a:link {
-    text-decoration: none;
-    outline: none;
-    color: #000;
-}
-
-.menu a:hover {
-    color: rgba(228, 179, 99, 1);
-}
-
-.menu a:active {
-    color: rgba(244, 68, 46, 1);
-}
-
-.menu a:visited {
-    color: rgba(228, 179, 99, 1);
-}
-
-/* Navigation */
 
 .menu li {
     font-size: 1em;
@@ -127,9 +109,10 @@ nav {
     padding: 5px;
 }
 
-.logo {
+.logo a {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    color: #000;
 }
 
 .logo a,
@@ -156,9 +139,6 @@ nav {
 .item.active {
     display: block;
 }
-
-
-
 
 /* Tablet menu */
 @media all and (min-width: 600px) {
@@ -269,7 +249,7 @@ nav {
 section {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 40px;
     max-width: 1000px;
 }
 
