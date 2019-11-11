@@ -36,24 +36,23 @@ $(document).ready(function() {
     });
 
     // hightlight section in viewport
-    var timeout;
-    $(window).on("load scroll resize", function() {
-      if (timeout) {
-        clearTimeout(timeout);
-      }
-      timeout = setTimeout(function() {
-        var $window = $(window),
-          hitbox_top = $window.scrollTop() + $window.height() * .3,
-          hitbox_bottom = $window.scrollTop() + $window.height() * .6;
-        $("section").each(function() {
-          var $element = $(this),
-            element_top = $element.offset().top,
-            element_bottom = $element.offset().top + $element.height();
-          $element.toggleClass("middle-viewport", hitbox_top < element_bottom && hitbox_bottom > element_top);
-        });
-      }, 20);
-    });
-    // smooth scroll
+    // var timeout;
+    // $(window).on("load scroll resize", function() {
+    //   if (timeout) {
+    //     clearTimeout(timeout);
+    //   }
+    //   timeout = setTimeout(function() {
+    //     var $window = $(window),
+    //       hitbox_top = $window.scrollTop() + $window.height() * .3,
+    //       hitbox_bottom = $window.scrollTop() + $window.height() * .6;
+    //     $("section").each(function() {
+    //       var $element = $(this),
+    //         element_top = $element.offset().top,
+    //         element_bottom = $element.offset().top + $element.height();
+    //       $element.toggleClass("middle-viewport", hitbox_top < element_bottom && hitbox_bottom > element_top);
+    //     });
+    //   }, 20);
+    // });
     // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -77,19 +76,3 @@ $(document).ready(function() {
     } // End if
   });
 });
-
-
-
-// document.addEventListener("DOMContentLoaded", init);
-
-// let navLinks = document.querySelectorAll(".nav-link");
-
-// function init() {
-//     navLinks.addEventListener("click", scrollTo);
-// }
-
-// function scrollTo() {
-//     navLinks.forEach.scrollIntoView({
-//         behavior: 'smooth'
-//     });
-// }
