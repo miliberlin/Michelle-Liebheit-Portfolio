@@ -318,6 +318,10 @@ section:last-of-type {
     justify-content: center;
 }
 
+.about-headline h2 {
+    text-align: left;
+}
+
 @media (max-width: 900px) {
     .about-text {
         width: 100%;
@@ -336,6 +340,9 @@ section:last-of-type {
     .resume {
         display: flex;
         flex-flow: row wrap;
+    }
+    .about-headline h2 {
+        text-align: center;
     }
 }
 
