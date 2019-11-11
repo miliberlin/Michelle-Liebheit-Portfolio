@@ -3,5 +3,4 @@
 - upload resume
 - contact form
 - add social icons to menu
-- add self intro text
 - upload website

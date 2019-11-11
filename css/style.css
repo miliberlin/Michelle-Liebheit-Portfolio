@@ -358,7 +358,7 @@ section:last-of-type {
         width: 250px;
         height: auto;
         order: 1;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .resume {
         display: flex;
