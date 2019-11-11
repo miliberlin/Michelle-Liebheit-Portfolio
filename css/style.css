@@ -246,6 +246,14 @@ nav {
     }
 }
 
+@media (max-width: 400px) {
+    .headline {
+        border: none !important;
+        width: 100%;
+    }
+}
+
+
 /* content general stylings */
 
 .outer-wrapper {
@@ -378,6 +386,12 @@ section:last-of-type {
 @media (max-width: 600px) {
     .skill-tile {
     width: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill-tile {
+    width: 50%;
     }
 }
 
