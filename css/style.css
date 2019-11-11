@@ -367,7 +367,7 @@ section:last-of-type {
     align-items: center;
 }
 
-.skill-container {
+.skill-flex-container {
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -398,16 +398,20 @@ section:last-of-type {
 }
 
 #projects {
-    width: 85vw;
     padding: 20px 50px;
+    width: 85vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .project-flex-container {
     width: 100%;
+    max-width: 800px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: space-between;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .project-tile {
