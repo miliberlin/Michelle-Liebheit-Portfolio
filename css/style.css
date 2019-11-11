@@ -270,6 +270,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     border-radius: 5px;
     margin-top: 30px;
+    max-width: 1000px;
 }
 
 section:first-of-type {
@@ -356,33 +357,41 @@ section:last-of-type {
 }
 
 #skillset {
-    display: flex;
-    flex-flow: column wrap;
     padding: 20px 50px;
     width: 85vw;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
-#skill-list {
-    list-style: none;
+.skill-container {
     width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
-#skill-list ul {
-    padding: 10px;
+.skill-tile {
+    width: 25%;
+    padding: 20px;
 }
 
-#skill-list li:nth-child(2) {
-    padding-left: 10%;
+@media (max-width: 600px) {
+    .skill-tile {
+    width: 30%;
+    }
 }
 
-#skill-list li:nth-child(3) {
-    padding-left: 20%;
+.skill-img img {
+    max-width: 100%;
+    height: auto;
 }
 
-#skill-list li:nth-child(4) {
-    padding-left: 30%;
+.skill-description {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 #projects {

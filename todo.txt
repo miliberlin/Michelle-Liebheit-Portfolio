@@ -2,5 +2,5 @@
 - link to github & codepen
 - upload resume
 - contact form
-- add social icons to menu
 - upload website
+- round progile image
