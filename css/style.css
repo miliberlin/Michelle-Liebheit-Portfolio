@@ -338,7 +338,7 @@ section:last-of-type {
     justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .about-text {
         width: 100%;
         padding: 20px 50px 20px 50px;
@@ -348,7 +348,10 @@ section:last-of-type {
         width: 250px;
         height: auto;
         order: 1;
-        margin-top: 40px;
+        margin-top: 30px;
+    }
+    .about-img img {
+        border-radius: 50%;
     }
     .resume {
         display: flex;
