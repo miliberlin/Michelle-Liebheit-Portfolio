@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    text-align: center;
 }
 
 h1  {
@@ -311,18 +312,6 @@ section:last-of-type {
     width: 100%;
 }
 
-.social-icons {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.icon {
-    font-size: 3em;
-    padding: 15px;
-}
-
 .about-img {
     width: 50%;
 }
@@ -488,4 +477,22 @@ section:last-of-type {
     border: 2px solid rgba(244, 68, 46, 1);
     border-radius: 3px;
     transform: scale(0.9);
+}
+
+#connect {
+    width: 85vw;
+    padding: 20px 50px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 3em;
+    padding: 15px;
 }
