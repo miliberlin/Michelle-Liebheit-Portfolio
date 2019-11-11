@@ -1,6 +1,5 @@
 - fix btn in portfolio
 - link to github & codepen
 - upload resume
-- contact form
 - upload website
 - round progile image
