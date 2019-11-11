@@ -1,3 +1,2 @@
-- upload resume
-- upload website
-- upload live demo
+- upload Japanese resume
+- edit project files (some have some bugs) 
